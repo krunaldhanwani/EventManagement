@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_30sdp"
+    tools:context=".EventDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_my_address_border_lite_blue"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvEventNameTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Event Name : "
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textColor="@color/blue8C"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvEventName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textColor="@color/blue8C"
+                    android:textSize="@dimen/_15sdp"/>
+
+                <TextView
+                    android:id="@+id/tvEventOrganizationNameTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Organization Name : "
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textColor="@color/blue8C"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvEventOrganizationName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textColor="@color/blue8C"
+                    android:textSize="@dimen/_15sdp"/>
+
+                <TextView
+                    android:id="@+id/tvEventDateTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date : "
+                    android:textColor="@color/blue8C"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvEventDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/blue8C"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textSize="@dimen/_15sdp" />
+
+                <TextView
+                    android:id="@+id/tvEventParticipateTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Who can participate : "
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textColor="@color/blue8C"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvEventParticipate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textColor="@color/blue8C"
+                    android:textSize="@dimen/_15sdp" />
+
+                <TextView
+                    android:id="@+id/tvEventFieldTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Which Field : "
+                    android:textColor="@color/blue8C"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvEventField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/blue8C"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textSize="@dimen/_15sdp"/>
+                <TextView
+                    android:id="@+id/tvEventContacttitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact for more information : "
+                    android:textColor="@color/blue8C"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvEventContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/blue8C"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textSize="@dimen/_15sdp"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

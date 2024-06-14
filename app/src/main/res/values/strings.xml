@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">eventapp</string>
+
+
+    <string name="Already_have_an_account_sign_up">Don\'t have an account? Signup</string>
+    <string name="Already_have_an_account">Already have an account? Login</string>
+
+    <string-array name="general1">
+        <item>BCA</item>
+        <item>MCA</item>
+        <item>B.COM</item>
+        <item>M.COM</item>
+        <item>BBA</item>
+        <item>COMPUTER SCIENCE</item>
+        <item>MBA</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vpImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginTop="@dimen/_14sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/llIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@+id/vpImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_10sdp"
+            app:tabMode="fixed"
+            android:background="@color/white"
+            app:tabGravity="center"
+            app:tabIndicator="@color/white"
+            app:tabBackground="@drawable/background_tab_selected"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black39"
+        android:letterSpacing="0.02"
+        android:padding="@dimen/_12sdp"
+        android:text="Atmiya Institute of Technology and Science (AITS) was established in Rajkot under the aegis of Atmiya Group of Institutions or Atmiya University. AITS is approved by AICTE, New Delhi, recognized by the Govt. of Gujarat and affiliated to Gujarat Technological University, Ahmedabad. AITS offer degreed at various levels such as bachelor’s, master’s and doctorates, often alongside other academic certificates, and professional degrees. The most common undergraduate degree is B.Tech."
+        app:layout_constraintTop_toBottomOf="@+id/llIndicator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:padding="@dimen/_12sdp"
+        android:background="@color/blue8C"
+        android:text="Most Common degrees :-"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="@dimen/_16sdp" />
+
+        <TextView
+            android:id="@+id/tvDegree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue8C"
+            android:padding="@dimen/_12sdp"
+          android:text="-BCA\n-MCA\n-B.Tech\n-M.Tech\n-Civil Engineering\n-Compugter Science\n-Software Engineering\n-Information Technology\n-Design Engineering\n-MAnagement\n-Electrical"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="@dimen/_15sdp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

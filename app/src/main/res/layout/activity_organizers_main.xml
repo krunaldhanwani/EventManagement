@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrganizersMainActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/raw_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="false"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvCreateAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Event Management"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="@color/blue8C"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_35sdp"
+                android:text="Please enter events details"
+                android:textAlignment="center"
+                android:textColor="@color/black39"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCreateAccount" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_26sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Event Name "
+                android:textColor="@color/black39"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_26sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_26sdp"
+                android:background="@drawable/bg_edittext_grey_"
+                android:hint="Enter event name "
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="@dimen/_35sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textColorHint="@color/grey9D"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:src="@drawable/ic_booking"
+                app:layout_constraintBottom_toBottomOf="@id/etName"
+                app:layout_constraintStart_toStartOf="@+id/etName"
+                app:layout_constraintTop_toTopOf="@+id/etName" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_26sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text="Event Organizer Name"
+                android:textColor="@color/black39"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_26sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_26sdp"
+                android:background="@drawable/bg_edittext_grey_"
+                android:hint="Organizers name"
+                android:inputType="textEmailAddress"
+                android:paddingStart="@dimen/_37sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textColorHint="@color/grey9D"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:src="@drawable/ic_name"
+                app:layout_constraintBottom_toBottomOf="@id/etEmail"
+                app:layout_constraintStart_toStartOf="@+id/etEmail"
+                app:layout_constraintTop_toTopOf="@+id/etEmail" />
+
+            <TextView
+                android:id="@+id/tvMobileNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_26sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text="Event Organizer Phone Number"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black39"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+            <EditText
+                android:id="@+id/etMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_26sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_26sdp"
+                android:background="@drawable/bg_edittext_grey_"
+                android:hint="Phone"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingStart="@dimen/_55sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textColorHint="@color/grey9D"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvMobileNumber" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/llCountryCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@id/etMobileNumber"
+                app:layout_constraintStart_toStartOf="@+id/etMobileNumber"
+                app:layout_constraintTop_toTopOf="@+id/etMobileNumber">
+
+                <TextView
+                    android:id="@+id/tvCountryCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:text="+91"
+                    android:textColor="@color/black39"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:src="@drawable/ic_arrow_down"
+                    app:layout_constraintBottom_toBottomOf="@id/tvCountryCode"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tvCountryCode"
+                    app:layout_constraintTop_toTopOf="@+id/tvCountryCode" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:background="@color/black39"
+                app:layout_constraintBottom_toBottomOf="@+id/etMobileNumber"
+                app:layout_constraintStart_toEndOf="@+id/llCountryCode"
+                app:layout_constraintTop_toTopOf="@+id/etMobileNumber" />
+
+            <TextView
+                android:id="@+id/tvGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_26sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text="Who Can Participate"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black39"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etMobileNumber" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/llMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvGender">
+
+                <RadioButton
+                    android:id="@+id/rbMale"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_26sdp"
+                    android:background="@drawable/custom_radio_button_"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:text="Male"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintBottom_toBottomOf="@id/rbMale"
+                    app:layout_constraintStart_toEndOf="@id/rbMale"
+                    app:layout_constraintTop_toTopOf="@id/rbMale" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/llFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toEndOf="@+id/llMale"
+                app:layout_constraintTop_toBottomOf="@+id/tvGender">
+
+                <RadioButton
+                    android:id="@+id/rbFemale"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_26sdp"
+                    android:background="@drawable/custom_radio_button_"
+                    android:button="@android:color/transparent"
+                    android:checked="false"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:text="Female"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintBottom_toBottomOf="@id/rbFemale"
+                    app:layout_constraintStart_toEndOf="@id/rbFemale"
+                    app:layout_constraintTop_toTopOf="@id/rbFemale" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/llOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toEndOf="@+id/llFemale"
+                app:layout_constraintTop_toBottomOf="@+id/tvGender">
+
+                <RadioButton
+                    android:id="@+id/rbOther"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_26sdp"
+                    android:background="@drawable/custom_radio_button_"
+                    android:button="@android:color/transparent"
+                    android:checked="false"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:text="All"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintBottom_toBottomOf="@id/rbOther"
+                    app:layout_constraintStart_toEndOf="@id/rbOther"
+                    app:layout_constraintTop_toTopOf="@id/rbOther" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tvDob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_26sdp"
+                android:layout_marginTop="@dimen/_26sdp"
+                android:text="Event Date"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black39"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/llMale" />
+
+            <TextView
+                android:id="@+id/tvBirthDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_26sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_26sdp"
+                android:background="@drawable/bg_edittext_grey_"
+                android:hint="Enter event date"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textColorHint="@color/grey9D"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDob" />
+
+
+
+            <TextView
+                android:id="@+id/tvServiceCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_26sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvBirthDate" />
+
+            <EditText
+                android:id="@+id/etServiceCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_26sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_26sdp"
+                android:background="@drawable/bg_edittext_grey_"
+                android:hint="Enter here"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textColorHint="@color/grey9D"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvServiceCity" />
+
+            <TextView
+                android:id="@+id/tvServiceCityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_26sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text=" Which Field Can Apply"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black39"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvBirthDate" />
+
+            <Spinner
+                android:id="@+id/tvField"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_26sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_26sdp"
+                android:background="@drawable/bg_edittext_grey_"
+                android:maxLines="1"
+                android:spinnerMode="dropdown"
+                android:hint="Select Field"
+                android:textColorHint="@color/grey9D"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvServiceCityName" />
+
+            <ImageView
+                android:id="@+id/serviceCityDropDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/ic_arrow_down"
+                app:layout_constraintBottom_toBottomOf="@id/tvField"
+                app:layout_constraintEnd_toEndOf="@+id/tvField"
+                app:layout_constraintTop_toTopOf="@+id/tvField" />
+
+            <TextView
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_26sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_26sdp"
+                android:background="@drawable/bg_button_yellow"
+                android:padding="@dimen/_12sdp"
+                android:text="Set Event"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvField" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
